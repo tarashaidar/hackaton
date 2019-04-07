@@ -37,12 +37,7 @@ window.initMap = function () {
       var marker = new google.maps.Marker({position: uluru, map: map, icon: image});
       
       carsCoords.forEach(coordinate => {
-        const carImage = new google.maps.MarkerImage(
-          "https://raw.githubusercontent.com/SergiySobchuk/www/master/uploads_images/taxi.png",
-          new google.maps.Size(45, 45),
-          new google.maps.Point(0, 0),
-          new google.maps.Point(-22, 0)
-        )
+        const carImage = "https://raw.githubusercontent.com/SergiySobchuk/www/master/uploads_images/taxi.png";
         const carPosition = new google.maps.Marker({position: coordinate, map: map, icon: carImage, draggable: true});
       });
       const newMarker = new google.maps.Marker({position: uluru, map: map, icon: pointPosition, draggable: false, navigationContol: true});
