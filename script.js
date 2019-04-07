@@ -37,5 +37,5 @@ window.initMap = function () {
       alert('geolocation is no available');
     }
   }
-
+//павпав
 //   initMap();
