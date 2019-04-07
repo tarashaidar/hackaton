@@ -11,7 +11,7 @@ window.initMap = function () {
         };
 
         // The map, centered at Uluru
-        const image = 'https://raw.githubusercontent.com/SergiySobchuk/www/master/uploads_images/passanger_54_54.png';
+        const image = './img/passanger_54_54.png';
         
 
         const map = new google.maps.Map(document.getElementById('map'), {zoom: 16, center: uluru});
