@@ -27,18 +27,18 @@ const carsCoords = [
             lng: pos.coords.longitude
         };
         const pointPosition = new google.maps.MarkerImage(
-          "img/place_22_22.png",
+          "https://raw.githubusercontent.com/SergiySobchuk/www/master/uploads_images/place.png",
           new google.maps.Size(22, 22),
           new google.maps.Point(0, 0),
           new google.maps.Point(11, 11)
       );
-        const image = 'img/passanger_54_54.png';
+        const image = 'https://raw.githubusercontent.com/SergiySobchuk/www/master/uploads_images/passanger_54_54.png';
         const map = new google.maps.Map(document.getElementById('map'), {zoom: 16, center: uluru});
         let marker = new google.maps.Marker({position: uluru, map: map, icon: image});
         
         carsCoords.forEach(coordinate => {
           const carImage = new google.maps.MarkerImage(
-            "img/taxi_45_45.png",
+            "https://raw.githubusercontent.com/SergiySobchuk/www/master/uploads_images/taxi.png",
             new google.maps.Size(45, 45),
             new google.maps.Point(0, 0),
             new google.maps.Point(22.5, 22.5)
